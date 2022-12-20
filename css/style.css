@@ -1,0 +1,26 @@
+@import url(./sort.css);
+@import url(./list.css);
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+	text-decoration: none;
+	list-style: none;
+	scroll-behavior: smooth;
+}
+:root {
+	--border-color: #e3e5e4;
+	--background-color: #c3c7ca;
+	--text-color: #34444f;
+}
+body {
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	height: 100vh;
+	margin: 0;
+	font-family: 'Lato', sans-serif;
+}
+ 
