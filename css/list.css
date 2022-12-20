@@ -7,19 +7,32 @@
 	width: fit-content;
 	margin: 5px 10px;
 	border-radius: 5px;
-}
-  
+} 
 .draggable-list li {
 	position: relative;
 	background-color: #fff;
 	display: flex;
 	flex: 1;
+	max-height: 70px;
 }
-  
-.draggable-list li:not(:last-of-type) {
+.draggable-list li{
 	border-bottom: 1px solid var(--border-color);
 }
-/* INDEX */
+.draggable-list li:hover, .draggable-list li:hover .descriptionBlock {
+	display: flex;
+	background-color: #eaeaea;
+}
+.draggable-list li:hover{
+	background-color: #eaeaea;
+}
+.draggable {
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex: 1;
+	position: relative;
+}
 .draggable-list .number {
 	background-color: var(--background-color);
 	display: flex;
@@ -27,10 +40,9 @@
 	justify-content: center;
 	font-size: 20px;
 	font-weight: 500;
-	height: 60px;
-	width: 60px;
+	height: 70px;
+	width: 70px;
 }
-/* BG color on hover when drag element */
 .draggable-list li.over .draggable {
 	background-color: #eaeaea;
 }
@@ -61,44 +73,43 @@
 	font-size: 14px;
 	transform: translateX(-50%) translateY(-50%);
 }
-/* Element title */
 .titleBlock {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	height: 100%;
 	width: 100%;
-
 }
-/* Element description */
 .descriptionBlock{
 	border: 1px solid rgb(162, 162, 162);
 }
-.descriptionBlock {
+.descriptionBlock img{
+	max-width: 200px;
+	max-height: 200px;
+}
+.descriptionBlock.normal {
 	position: absolute;
 	left: 100%;
 	top: -1px;
 	width: fit-content;
 	padding: 0 5px 0 20px;
-	min-width: 200px;
+	min-width: 300px;
 	min-height: 200px;
 	display: none;
+	flex-direction: column;
 	justify-content: center;
-	align-items: center;
+	align-items: flex-start;
 }
-.draggable-list li:hover, .draggable-list li:hover .descriptionBlock {
-	display: flex;
-	background-color: #eaeaea;
+.descriptionBlock.reverse {
+	position: absolute;
+	left: 100%;
+	bottom: -1px;
+	width: fit-content;
+	padding: 0 5px 0 20px;
+	min-width: 300px;
+	min-height: 200px;
+	display: none;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
 }
-.draggable-list li:hover{
-	background-color: #eaeaea;
-}
-.draggable {
-	cursor: pointer;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	flex: 1;
-	position: relative;
-}
-  

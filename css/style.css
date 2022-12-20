@@ -13,6 +13,7 @@
 	--border-color: #e3e5e4;
 	--background-color: #c3c7ca;
 	--text-color: #34444f;
+	--count:10;
 }
 body {
 	background-color: #fff;
