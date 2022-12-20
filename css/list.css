@@ -64,6 +64,7 @@
 	height: 60px;
 }
 .ratingBlock{
+	padding: 0 10px;
 	position: relative;
 }
 .ratingBlock p{
